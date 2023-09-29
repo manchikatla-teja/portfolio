@@ -1,0 +1,32 @@
+.taskbar{
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    bottom: 0%;
+    padding: 0 1rem;
+}
+.taskbarIcon{
+    width: 3rem;
+    height: 3rem;
+    background-color: green;
+    margin: 0 0.2rem;
+
+}
+.SearchBar{
+    width: 16rem;
+    height: 1.9rem;
+    margin: 0.1rem 1.5rem 0.1rem 0.1rem;
+    border: 0.1rem solid gray;
+    background-color: rgba(0, 0, 0, 0.74);
+    color: white
+}
+.taskbarIcon:hover{
+    opacity: 0.8;
+    border-left: 0.1rem solid white;
+    border-right: 0.1rem solid white;
+}

@@ -1,0 +1,32 @@
+.Application{
+    display: flex;
+    
+    min-width: 5.5rem;
+    min-height: 5.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+    position: relative;
+}
+
+.Application:hover{
+    cursor: pointer;
+    border: 0.1rem solid white;
+    background-color: rgba(255, 255, 255, 0.288);
+    box-shadow: inset 0 0 0.5rem 0.5rem rgba(255, 253, 253, 0.61);
+}
+
+.AppImage{
+    
+    width: 3rem;
+    height: 3rem;
+}
+.AppName{
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    
+
+}

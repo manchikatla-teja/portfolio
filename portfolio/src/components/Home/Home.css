@@ -1,0 +1,12 @@
+.Home{
+    background-color: cyan;
+    height: 90vh;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(10, 5.8rem);
+    grid-template-rows: repeat(6, 5.8rem);
+    justify-content:start;
+    align-content: start;
+    grid-auto-flow: column;
+    gap: 0.4rem 0rem;
+}
