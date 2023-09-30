@@ -13,7 +13,7 @@
 .taskbarIcon{
     width: 3rem;
     height: 3rem;
-    background-color: green;
+    background-color: transparent;
     margin: 0 0.2rem;
 
 }
@@ -27,6 +27,13 @@
 }
 .taskbarIcon:hover{
     opacity: 0.8;
-    border-left: 0.1rem solid white;
-    border-right: 0.1rem solid white;
+    border-left: 0.1rem solid ;
+    border-image: linear-gradient(to bottom, transparent, white, transparent) 1 100%;
+    border-right: 0.1rem solid;
 }
+.taskBarImage{
+    width: 2.8rem;
+    height: 2.8rem;
+    margin: 0.1rem;
+}
+
