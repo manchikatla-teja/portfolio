@@ -3,10 +3,17 @@
     height: 90vh;
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(10, 5.8rem);
-    grid-template-rows: repeat(6, 5.8rem);
+    grid-template-columns: repeat(15, 7%);
+    grid-template-rows: repeat(6, 15%);
     justify-content:start;
     align-content: start;
     grid-auto-flow: column;
     gap: 0.4rem 0rem;
+}
+.CV{
+    box-shadow: 0rem 0rem 1rem 0.2rem black;
+    grid-column-start: 8;
+    grid-column-end: 15;
+    grid-row-start: 1;
+    grid-row-end: 7;
 }
