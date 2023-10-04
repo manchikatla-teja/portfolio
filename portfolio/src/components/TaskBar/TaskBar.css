@@ -1,19 +1,20 @@
 .taskbar{
     width: 100%;
     height: 3rem;
-    background-color: rgba(0, 0, 255);
+    background-image: url("./../../images/taskbar-background.svg");
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     position: fixed;
     bottom: 0%;
-    padding: 0 1rem;
+    border-top: 0.1rem solid rgba(0, 140, 255, 0.719);
+    padding: 0.1rem 1rem;
 }
 .taskbarIcon{
     width: 3rem;
     height: 3rem;
-    background-color: transparent;
+    background-color: rgba(0, 0, 255, 0.116);
     margin: 0 0.2rem;
 
 }
@@ -22,14 +23,13 @@
     height: 1.9rem;
     margin: 0.1rem 1.5rem 0.1rem 1.5rem;
     border: 0.1rem solid gray;
+    border-radius: 1rem;
     background-color: rgba(0, 0, 0, 0.74);
     color: white
 }
 .taskbarIcon:hover{
-    opacity: 0.8;
-    border-left: 0.1rem solid ;
-    border-image: linear-gradient(to bottom, transparent, white, transparent) 1 100%;
-    border-right: 0.1rem solid;
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 255, 0.411);
 }
 .taskBarImage{
     width: 2.8rem;
