@@ -5,23 +5,41 @@ import linkedin from "../../images/linkedin.svg"
 import x from "../../images/x.jpg"
 import CV from "../../pdfFiles/LatestCV.pdf"
 import close from "../../images/close.svg"
-const Home = () => {
+import myImage from "../../images/edited.jpg"
+import { useState } from "react"
+import TaskBar from '../TaskBar/TaskBar';
+import ProjectFiles from "../Projects/ProjectFiles"
 
+
+const Home = () => {
+    const [displayProjectsAccToLang, setDisplayProjectsAccToLang] = useState("none");
+    const [displayOfCV, setDisplayOfCV] = useState("none");
     const gitHubUrl1 = "https://github.com/manchikatla-teja?tab=repositories";
     const linkedInUrl1 = "https://www.linkedin.com/in/teja-manchikatla-6254a9252/";
     const xUrl = "https://twitter.com/ManchikatlaTej1";
+    
+    function displayProjectsAccToLanguage(language){
+        setDisplayProjectsAccToLang(language);
+    }
 
     return ( 
+        <>
         <div className="Home">
+            <div onClick={()=>{setDisplayOfCV("block")}}><Application image={myImage} appName="My CV"></Application></div>
             <div onClick={()=>{window.open(gitHubUrl1,"_blank")}}><Application image={github} appName="GitHub"></Application></div>
             <div onClick={()=>{window.open(linkedInUrl1,"_blank")}}><Application image={linkedin} appName="LinkedIn"></Application></div>
+            
             <div onClick={()=>{window.open(xUrl,"_blank")}}><Application image={x} appName="X"></Application></div>
-            <div  className="CV">
-                <button style={{position:"absolute", right:"0.3rem", background:"transparent", border:"none", cursor:"pointer"}}><img src={close} style={{width:"1.5rem", height:"1.5rem", objectFit:"cover"}} alt=""></img></button>
+            <div className="ProjectsToShow"><ProjectFiles languageToShow={displayProjectsAccToLang}></ProjectFiles></div>
+            <div  className="CV" style={{display:displayOfCV}}>
+                <button style={{position:"absolute", right:"0.3rem", background:"transparent", border:"none", cursor:"pointer"}} onClick={()=>{setDisplayOfCV("none");console.log(displayOfCV, {displayOfCV})}}><img src={close} style={{width:"1.5rem", height:"1.5rem", objectFit:"cover"}} alt=""></img></button>
                 <embed src={CV} width="100%" height="100%"></embed>
                 </div>
         
         </div>
+        
+      <TaskBar func={displayProjectsAccToLanguage}></TaskBar>
+      </>
      );
 }
  

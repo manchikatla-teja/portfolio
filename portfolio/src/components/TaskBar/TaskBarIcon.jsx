@@ -1,19 +1,13 @@
 import "../TaskBar/TaskBar.css"
 
-const TaskBarIcon = ({image, Class, func}) => {
+const TaskBarIcon = ({image}) => {
     let borderRadius="0%";
-
-    
-
-    if(Class==="profileIcon"){
-        borderRadius="50%";
-    }
 
 
     
 
     return (
-        <div className={Class}><img className="taskBarImage" src={image} alt="" style={{borderRadius:borderRadius}}></img>
+        <div className="taskbarIcon" tabIndex="1"><img className="taskBarImage" src={image} alt="" style={{borderRadius:borderRadius}}></img>
         </div>
                  );
 }

@@ -1,0 +1,15 @@
+.projectFiles{
+    
+    height: 35rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background-color: red;
+    overflow-y:auto;
+}
+.project{
+    min-height: 10rem;
+    background-color: green;
+    margin: 0.2rem;
+}

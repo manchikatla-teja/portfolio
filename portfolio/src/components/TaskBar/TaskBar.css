@@ -31,14 +31,12 @@
     transform: scale(1.1);
     background-color: rgba(0, 0, 255, 0.411);
 }
+.taskbarIcon:focus-within{
+    background-color: rgba(0, 0, 255, 0.411);
+}
 .taskBarImage{
     width: 2.8rem;
     height: 2.8rem;
     margin: 0.1rem;
-}
-.profileIcon{
-    width: 3rem;
-    height: 3rem;
-    background-color: transparent;
 }
 
