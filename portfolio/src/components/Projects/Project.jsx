@@ -2,9 +2,21 @@ import "../Projects/ProjectFiles.css"
 const Project = ({project}) => {
     return (
         <div className="project">
-            <div >{project.name}</div>
-            <div >{project.languages}</div>
-            <img src={project.image} style={{width: "1rem", height:"1rem"}} alt=""></img>
+            
+            <img className="projectImage" src={project.image} alt=""></img>
+            <div className="projectInfo">
+            <div className="projectTitle">{project.name}</div>
+            <ul>
+            {project.languages.map((item, key)=>{
+                return <li>{item}</li>
+            })}
+            </ul>
+            {/* <div className="projectLanguages">{project.languages}</div> */}
+            <div style={{display:"flex"}}>
+            <a className="projectGitRepoLink">repolink: asdf</a>
+            <a className="projectDemoLink">demolink: asdf</a>
+            </div>
+            </div>
         </div>
     );
 }

@@ -1,15 +1,39 @@
 .projectFiles{
     
-    height: 35rem;
+    max-height: 80vh;
     max-width: 100%;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    background-color: red;
     overflow-y:auto;
+    overflow-x: hidden;
 }
 .project{
     min-height: 10rem;
+    min-width: 10rem;
+    z-index: 10;
     background-color: green;
     margin: 0.2rem;
+    padding:0.5rem;
+    display: flex;
+}
+
+.project:hover{
+    transform: translateX(1rem);
+}
+
+.projectImage{
+
+    width: 9rem;
+    height: auto;
+    object-fit: cover;
+}
+.projectInfo{
+    margin: auto;
+}
+.projectTitle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    
 }

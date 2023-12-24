@@ -20,8 +20,6 @@
 }
 .ProjectsToShow{
     
-    
-    background-color: yellow;
     grid-column-start: 3;
     grid-column-end: 7;
     grid-row-start: 1;
