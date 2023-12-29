@@ -9,16 +9,24 @@
     margin: 0.1rem;
     padding:0.5rem;
     display: flex;
-    animation: 1s linear 0s 1 projectReveal;
+    opacity: 0%;
+    animation-name: projectReveal;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
     
 }
 
 @keyframes projectReveal {
     0%{
         opacity: 0%;
+        transform: translateX(-14rem);
     }
     100%{
         opacity: 100%;
+        /* transform: translateX(2rem); */
     }
 }
 

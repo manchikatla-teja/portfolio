@@ -1,9 +1,10 @@
 import repoImage from "../../images/github.svg"
 import demoImage from "../../images/demoImage.svg"
 import "../Projects/ProjectFiles.css"
-const Project = ({project, key}) => {
+const Project = ({project, delay}) => {
+    
     return (
-        <div className="project">
+        <div className="project" style={{animationDelay: `${delay*100}ms`}}>
             
             {project.image && <img className="projectImage" src={project.image} alt=""></img>}
             <div className="projectInfo">

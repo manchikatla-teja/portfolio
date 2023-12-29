@@ -104,7 +104,7 @@ const ProjectFiles = ({languageToShow}) => {
     
     // const [displayOfButton, setDisplayOfButton] = useState("block");
     // console.log(displayFiles, displayOfFiles);
-    console.log(realprojects, languageToShow);
+    //console.log(realprojects, languageToShow);
     return ( 
         <>
         <div style={{overflowY:"auto", maxHeight:"80vh"}}>
